@@ -6,7 +6,7 @@ namespace TrabalhoFinal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Lutando com o Git!");
         }
     }
 }
