@@ -14,7 +14,7 @@ namespace TrabalhoFinal
         {
 
             this.Samples = samples;
-            this.K = K;
+            this.K = clusters;
 
         }
 
@@ -23,10 +23,11 @@ namespace TrabalhoFinal
         public List<Sample> Find(List<Sample> centroids = null)
         {
             var result = new List<Sample>();
+            
+            //Se não for passado como parâmetro, pega aleatoriamente
             if (centroids is null)
             {
-                centroids = new List<Sample>();
-                SetRandomCentroids(centroids);
+                centroids = GetRandomCentroids();
             }
 
             //Clonando a lista de centroides para poder verificar se houve movimentação dos centroids
@@ -116,11 +117,12 @@ namespace TrabalhoFinal
             }
         }
 
-        private void  SetRandomCentroids(List<Sample> centroids)
+        private List<Sample> GetRandomCentroids()
         {
+            var result = new List<Sample>(); 
             var random = new Random();
             var usedIndexes = new HashSet<int>(K);
-            while (centroids.Count < K)
+            while (result.Count < K)
             {
                 int randomIndex;
                 do
@@ -129,9 +131,10 @@ namespace TrabalhoFinal
                 } while (usedIndexes.Contains(randomIndex));
                 usedIndexes.Add(randomIndex);
 
-                var randomCentroid = Samples[randomIndex].CloneDataOnly(newLabel: centroids.Count.ToString());
-                centroids.Add(randomCentroid);
+                var randomCentroid = Samples[randomIndex].CloneDataOnly(newLabel: result.Count.ToString());
+                result.Add(randomCentroid);
             }
+            return result;
 
         }
     }
