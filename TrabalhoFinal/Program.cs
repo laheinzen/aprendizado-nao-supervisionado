@@ -12,8 +12,6 @@ namespace TrabalhoFinal
             {
                 //carrega as amostras/objetos
 
-                //var samples = loadStaticData();
-
                 var samples = loadDataFromFile($"..\\..\\..\\csv\\DataHotDogs.csv");
 
                 //Verificando 
@@ -23,18 +21,6 @@ namespace TrabalhoFinal
                 {
                     Console.WriteLine(sample);
                 }
-
-                // Não defino mais os centroides manualmente
-                ////lista os k centroides
-                //var centroids = new List<Sample>();
-                //centroids.Add(samples[0].CloneDataOnly("1"));
-                //centroids.Add(samples[2].CloneDataOnly("2"));
-
-                //Console.WriteLine("Verificando escolha dos centroides");
-                //foreach (var centroid in centroids)
-                //{
-                //    Console.WriteLine(centroid.ToString());
-                //}
 
                 var kmeans = new KMeans(samples: samples, clusters: 3);
                 var centroids = kmeans.Find();
