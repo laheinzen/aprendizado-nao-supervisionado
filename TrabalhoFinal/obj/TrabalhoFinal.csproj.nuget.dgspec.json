@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\ds\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj": {}
+    "D:\\luiz.angelo\\code\\DataScience\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj": {}
   },
   "projects": {
-    "D:\\Code\\ds\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj": {
+    "D:\\luiz.angelo\\code\\DataScience\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\ds\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj",
+        "projectUniqueName": "D:\\luiz.angelo\\code\\DataScience\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj",
         "projectName": "TrabalhoFinal",
-        "projectPath": "D:\\Code\\ds\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj",
-        "packagesPath": "C:\\Users\\lah\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\ds\\aprendizado-nao-supervisionado\\TrabalhoFinal\\obj\\",
+        "projectPath": "D:\\luiz.angelo\\code\\DataScience\\aprendizado-nao-supervisionado\\TrabalhoFinal\\TrabalhoFinal.csproj",
+        "packagesPath": "C:\\Users\\luiz.angelo\\.nuget\\packages\\",
+        "outputPath": "D:\\luiz.angelo\\code\\DataScience\\aprendizado-nao-supervisionado\\TrabalhoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luiz.angelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -54,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
