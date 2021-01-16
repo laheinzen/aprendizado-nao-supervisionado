@@ -20,8 +20,9 @@ namespace TrabalhoFinal
 
 
         //Calcula o k-means, efetivamente
-        public void Find(List<Sample> centroids = null)
+        public List<Sample> Find(List<Sample> centroids = null)
         {
+            var result = new List<Sample>();
             if (centroids is null)
             {
                 centroids = new List<Sample>();
@@ -40,15 +41,20 @@ namespace TrabalhoFinal
                 FindAndSetNearestCentroidFor(sample, centroids);
             }
 
-            RecenterCentroids(centroids);
+            centroids = GetRecenteredCentroids(centroids);
 
             var centroidsMoved = CentroidsMoved(centroids, previousCentroids);
 
             if (centroidsMoved)
             {
-                Console.WriteLine("Houve alteração nos centroides, recalculando");
-                Find(centroids);
+                result = Find(centroids);
             }
+            else {
+                result = centroids;
+
+            } 
+
+            return result;
         }
 
         private bool CentroidsMoved(List<Sample> centroids, List<Sample> previousCentroids)
@@ -64,8 +70,9 @@ namespace TrabalhoFinal
             return false;
         }
 
-        private void RecenterCentroids(List<Sample> centroids)
+        private List<Sample> GetRecenteredCentroids(List<Sample> centroids)
         {
+            var result = new List<Sample>();
             //Convertendo de lista para dicionário
             var indexedCentroids = new Dictionary<string, Sample>();
             foreach (var centroid in centroids)
@@ -84,13 +91,14 @@ namespace TrabalhoFinal
                 centroid.SumData(sample.Data);
             }
 
-            //Calcula a média e atribui aos novos centroides
-            centroids = new List<Sample>();
+            //Calcula a média e atribui aos novosntroids = new List<Sample>();
             foreach (var centroid in indexedCentroids.Values)
             {
                 centroid.ApplyDataMean();
-                centroids.Add(centroid);
+                result.Add(centroid);
             }
+
+            return result;
 
         }
 

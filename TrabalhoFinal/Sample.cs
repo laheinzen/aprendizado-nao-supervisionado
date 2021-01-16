@@ -9,12 +9,18 @@ namespace TrabalhoFinal
         public double[] Data { get; set; }
         public string Label { get; set; }
 
+        public string StartingLabel { get; set; }
+
         private int SumDataCounter;
         
-        public Sample(double[] data, string label)
+        public Sample(double[] data, string label, string startingLabel = null)
         {
             this.Data = data;
             this.Label = label;
+            if (startingLabel is null) {
+            startingLabel = label;
+            };
+            this.StartingLabel = startingLabel;
         }
 
         public override string ToString()
@@ -27,7 +33,7 @@ namespace TrabalhoFinal
             }
             stringData.Remove(stringData.Length-1, 1);
             stringData.Append("]");
-            return $"Sample data={stringData}, label={Label}";        
+            return $"Sample data={stringData}, label={Label}, originalLabel={StartingLabel}";        
         }
 
         public Sample Clone()
@@ -61,8 +67,8 @@ namespace TrabalhoFinal
             for (int dimension = 0; dimension < Data.Length; dimension++)
             {
                 Data[dimension] += dataToSum[dimension];
-                SumDataCounter++;
             }
+            SumDataCounter++;
         }
 
         public void ApplyDataMean()
@@ -78,7 +84,7 @@ namespace TrabalhoFinal
         {
             double[] clonedData = new double[this.Data.Length];
             Array.Copy(this.Data, clonedData, this.Data.Length);
-            return new Sample(clonedData, newLabel);
+            return new Sample(data: clonedData, label: newLabel, startingLabel: this.StartingLabel);
         }
     }
 }

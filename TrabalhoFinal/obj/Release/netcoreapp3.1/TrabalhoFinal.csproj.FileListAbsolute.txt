@@ -1,0 +1,12 @@
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\bin\Release\netcoreapp3.1\TrabalhoFinal.exe
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\bin\Release\netcoreapp3.1\TrabalhoFinal.deps.json
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\bin\Release\netcoreapp3.1\TrabalhoFinal.runtimeconfig.json
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\bin\Release\netcoreapp3.1\TrabalhoFinal.runtimeconfig.dev.json
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\bin\Release\netcoreapp3.1\TrabalhoFinal.dll
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\bin\Release\netcoreapp3.1\TrabalhoFinal.pdb
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\obj\Release\netcoreapp3.1\TrabalhoFinal.AssemblyInfoInputs.cache
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\obj\Release\netcoreapp3.1\TrabalhoFinal.AssemblyInfo.cs
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\obj\Release\netcoreapp3.1\TrabalhoFinal.csproj.CoreCompileInputs.cache
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\obj\Release\netcoreapp3.1\TrabalhoFinal.dll
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\obj\Release\netcoreapp3.1\TrabalhoFinal.pdb
+D:\luiz.angelo\code\DataScience\aprendizado-nao-supervisionado\TrabalhoFinal\obj\Release\netcoreapp3.1\TrabalhoFinal.genruntimeconfig.cache

@@ -12,6 +12,7 @@ namespace TrabalhoFinal
 
             //Verificando 
 
+            Console.WriteLine("Dados estatíticos"); 
             foreach (var sample in samples)
             {
                 Console.WriteLine(sample);
@@ -23,14 +24,12 @@ namespace TrabalhoFinal
             centroids.Add(samples[2].CloneDataOnly("2"));
 
             Console.WriteLine("Verificando escolha dos centroides"); 
-
-            //Verificando que estamos no caminho certo
             foreach (var centroid in centroids){
                 Console.WriteLine(centroid.ToString());
             }
 
             var kmeans = new KMeans(samples: samples, clusters: 3);
-            kmeans.Find(centroids);
+            centroids = kmeans.Find(centroids);
 
             Console.WriteLine("Samples final");
             foreach (var sample in kmeans.Samples)
